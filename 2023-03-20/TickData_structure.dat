@@ -1,0 +1,32 @@
+Daily TickData 
+
+Each record has the following fields (tab delimited):
+
+Field       	Size		Value
+-----       	----		-----
+Commodity Code	5 
+Contract Type	1		F – Futures
+				P – Put
+				C – Call
+Month Code	1		F,G,H,J,K,M,N,Q,U,V,X,Z
+Delivery Year	4		YYYY
+Strike Price	7		7 zeros - Futures Price
+				others - Strike Price
+Trade Date	8		YYYYMMDD
+Log time	6		HHMMSS
+Price Indicator	1		# - Opening Price Range
+				A - Options Autoquote
+				Blank - Normal Prices
+Price		10		<space/->9999999999
+Message Code	1		B – Bid
+				A – Ask
+				T – Traded
+Amend Code	1		Blank - Normal Record
+				D – Deleted Record
+				C – Corrected Record
+				I – Inserted Record
+				A – ATS
+Volume		5		
+
+
+

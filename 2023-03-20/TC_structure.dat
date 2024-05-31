@@ -1,0 +1,26 @@
+Trade Cancellation Field Structure
+
+Each record has the following fields (delimited by a comma ','):
+
+Field       	Size		Value
+-----       	----		-----
+Commodity 	3 		
+Contract Type	1		F – Futures
+				P – Put
+				C – Call
+Delivery Month 	1		F,G,H,J,K,M,N,Q,U,V,X,Z
+Delivery Year	4		YYYY
+Strike Price	7		7 zeros - Futures Price
+				others - Strike Price
+Business Date	8		YYYYMMDD
+Match time	6		HHMMSS
+Price Indicator	1		# - Opening Price Range
+				A - Options Autoquote
+				Blank - Normal Prices
+Price		10		9999999.99
+Message Code	1		Y – Traded					
+Amend Code	1		D – Deleted Record					
+Volume		5		
+
+
+
